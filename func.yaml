@@ -7,15 +7,14 @@ imageDigest: ""
 created: 2022-11-17T07:19:05.99028495-05:00
 invocation:
   format: http
-git:
-  url: https://github.com/Shashankft9/demo-winnerson.git
-  revision: master
 build:
-  buildpacks:
-  - paketo-buildpacks/go-dist
-  - ghcr.io/boson-project/go-function-buildpack:tip
+  git:
+    url: https://github.com/Shashankft9/demo-winnerson
+  buildpacks: []
   builder: ""
   buildEnvs: []
+  builderImages:
+    pack: ghcr.io/boson-project/go-function-builder:tip
 run:
   volumes: []
   envs: []
